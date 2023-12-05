@@ -1,116 +1,140 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Mi Portafolio Personal</title>
+  <title>MI PORTAFOLIO PROFESIONAL</title>
   <style>
     /* Reset de estilos para el body */
-    body {
-      margin: 0;
-      padding: 0;
-    }
+  body {
+    margin: 0;
+    padding: 0;
+  }
 
-    /* Estilos generales para los encabezados */
-    h1, h2 {
-      margin: 0;
-      padding: 0;
-      font-family: Arial, sans-serif;
-      font-weight: bold;
-    }
+  /* Estilos generales para los encabezados */
+  h1, h2 {
+    margin: 0;
+    padding: 0;
+    font-family: Arial BLACK, sans-serif;
+    font-weight: bold;
+  }
 
-    h1 {
-        margin-bottom: 20px;
-    }
-
-    /* Estilos para la sección de inicio */
-    #inicio {
-      padding: 50px;
-      background-color: #FFD1DC;
-      text-align: center;
-    }
-
-    #inicio img {
-      width: 150px; /* Cambiar el ancho de la imagen según tu preferencia */
-      height: 150px; /* Cambiar la altura de la imagen según tu preferencia */
-      border-radius: 50%; /* Opcional: agregar bordes redondeados a la imagen */
-      display: inline-block;
-      margin-top: 20px;
+  h1 {
       margin-bottom: 20px;
-    }
+  }
+
+  /* Estilos para la sección de inicio */
+  #inicio {
+    height: 100vh;
+    padding: 50px;
+    background-color: #53FFCB  ;
+    text-align: center;
+  }
+
+  #inicio img {
+    width: 150px; /* Cambiar el ancho de la imagen según tu preferencia */
+    height: 150px; /* Cambiar la altura de la imagen según tu preferencia */
+    border-radius: 50%; /* Opcional: agregar bordes redondeados a la imagen */
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
 
 
-    /* Estilos para la sección de habilidades */
-    #habilidades {
-      padding: 50px;
-      background-color: #BCE5F5;
-    }
+  /* Estilos para la sección de habilidades */
+  #habilidades {
+    height: 100vh;
+    padding: 50px;
+    background-color: #BD81E5 ;
+  }
 
-    /* Estilos para la lista de habilidades */
-    #habilidades ul {
+  /* Estilos para la lista de habilidades */
+  #habilidades ul {
+    list-style-type: none;
+  }
+
+  /* Estilos para la sección de proyectos */
+  #proyectos {
+    height: 100vh;
+    padding: 50px;
+    background-color: #FFFFC2;
+  }
+
+  /* Estilos para la lista de proyectos */
+  #proyectos ul {
+    list-style-type: none;
+  }
+
+  /* Estilos para la sección de contacto */
+  #contacto {
+    height: 100vh;
+    padding: 50px;
+    background-color: #53FFCB;
+  }
+
+  /* Estilos para la lista de contacto */
+  #contacto ul {
+    list-style-type: none;
+  }
+
+  /* Estilos generales para los párrafos y listas */
+  p, ul {
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    color: #333;
+  }
+
+  p {
+      max-width: 650px;
+      text-align: center;
+      margin: 0 auto;
+      margin-bottom: 20px;
+  }
+
+  ul {
       list-style-type: none;
-    }
+      padding: 0;
+      margin: 0;
+  }
 
-    /* Estilos para la sección de proyectos */
-    #proyectos {
-      padding: 50px;
-      background-color: #FFFFC2;
-    }
+  /* Estilos para los elementos de lista */
+  li {
+    display: inline; /* Cambia a "inline-block" si quieres que tengan un ancho fijo */
+    margin-right: 10px; /* Espaciado entre los elementos de lista */
+  }
 
-    /* Estilos para la lista de proyectos */
-    #proyectos ul {
-      list-style-type: none;
-    }
+  .contenedorJustificado {
+  text-align: justify;
+}
 
-    /* Estilos para la sección de contacto */
-    #contacto {
-      padding: 50px;
-      background-color: #DCE0EA;
-    }
+.subtituloPrincipal {
+font-family: "lato", sans-serif;
+font-weight: bold;
+}
 
-    /* Estilos para la lista de contacto */
-    #contacto ul {
-      list-style-type: none;
-    }
 
-    /* Estilos generales para los párrafos y listas */
-    p, ul {
-      font-family: Arial, sans-serif;
-      font-size: 16px;
-      color: #333;
-    }
-
-    p {
-        max-width: 300px;
-        text-align: center;
-        margin: 0 auto;
-        margin-bottom: 20px;
-    }
-
-    ul {
-        list-style-type: none;
-        padding: 0;
-        margin: 0;
-    }
-
-    /* Estilos para los elementos de lista */
-    li {
-      display: inline; /* Cambia a "inline-block" si quieres que tengan un ancho fijo */
-      margin-right: 10px; /* Espaciado entre los elementos de lista */
-    }
+</style>
   </style>
   <link rel="stylesheet" href="estilos.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
 </head>
 <body>
   <!-- Sección de inicio -->
   <section id="inicio">
     <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="Imagen de cabecera">
-    <h1>Estefany Aguilar</h1>
-    <p>Programadora web apasionada con experiencia en startups colombianas. Habilidades en HTML, CSS, JavaScript. Enfoque en interfaces de usuario atractivas y eficientes.</p>
+    <h1 id="nombreInicio"></h1> <!-- Elemento donde se mostrará el nombre en la sección de inicio -->
+    <div class="subtituloX">
+      <h2 class="subtituloPrincipal">El código es mi lienzo, las soluciones son mi arte!</h2>
+    </div>
+    <div class="contenedorJustificado">
+      <p> "Soy un desarrollador junior apasionado y dedicado, con habilidades fundamentales en bases de datos SQL, desarrollo de aplicaciones Windows Forms y un conocimiento básico en JavaScript para el desarrollo web. A través de mi portafolio, muestro proyectos que representan mi sólida base en estas áreas. Estoy comprometido a expandir mis conocimientos y habilidades en un entorno laboral desafiante y colaborativo."</p>
+    </div>
     <ul>
-        <!-- Enlaces a redes sociales -->
-        <li><a href="https://www.linkedin.com/">LinkedIn</a></li>
-        <li><a href="https://twitter.com/">Twitter</a></li>
-        <li><a href="https://github.com/">GitHub</a></li>
-        <!-- Agrega más enlaces a tus redes sociales aquí -->
+      <!-- Enlaces a redes sociales -->
+      <li><a href="https://www.linkedin.com/in/berlin-beltran-7545152a3/">LinkedIn</a></li>
+      <li><a href="https://twitter.com/">Twitter</a></li>
+      <li><a href="https://github.com/">GitHub</a></li>
+      <!-- Agrega más enlaces a tus redes sociales aquí -->
     </ul>
   </section>
 
@@ -147,8 +171,32 @@
     </ul>
   </section>
 
-  <!-- Puedes agregar más secciones según tus necesidades -->
+  <!-- Coloca cualquier otra sección que necesites aquí -->
 
+  <script>
+    // Script JavaScript para mostrar el nombre letra por letra
+    document.addEventListener("DOMContentLoaded", function() {
+      const nombre = "Berlin Beltran"; // Tu nombre
+
+      let index = 0;
+      const nombreElement = document.querySelector("#nombreInicio");
+
+      function mostrarNombre() {
+        if (index < nombre.length) {
+          nombreElement.textContent += nombre.charAt(index);
+          index++;
+          setTimeout(mostrarNombre, 200); // Intervalo de tiempo entre letras (200 milisegundos en este ejemplo)
+        }
+      }
+
+      mostrarNombre();
+    });
+  </script>
 </body>
 </html>
 
+
+
+
+
+  
